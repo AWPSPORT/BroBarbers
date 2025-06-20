@@ -6,15 +6,31 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BroBarbers</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <div>
+        <nav class="nav nav-list">
+            <div class="nav-list">
+                <h1 class="nav-content">BroBarbers</h1>
+                <a class="nav-content main" href="">Main</a>
+                <a class="nav-content" href="">Shop</a>
+                <a class="nav-content" href="">Contacts</a>
+                <a class="nav-content" href="">About us</a>
+            </div>
+        </nav>
         <nav class="nav">
-            <a class="nav-content" href="">Main</a>
-            <a class="nav-content" href="">Shop</a>
-            <a class="nav-content" href="">Contacts</a>
-            <a class="nav-content" href="">About us</a>
+
+            <div class="nav-list-item">
+                <h1 class="nav-content logo" >BroBarbers</h1>
+                <button class="nav-button" aria-expanded="false" aria-controls="list">Menu</button>
+                <div class="nav-list-menu-item">
+                    <a class="nav-menu-item-text" href="">Main</a>
+                    <a class="nav-menu-item-text" href="">Shop</a>
+                    <a class="nav-menu-item-text" href="">Contacts</a>
+                    <a class="nav-menu-item-text" href="">About us</a>
+                </div>
+            </div>
         </nav>
     </div>
     <div class="head">
@@ -22,7 +38,7 @@
         <h2>Настояший стиль начинаеться здесь</h2>
     </div>
     <section class="services">
-  <h2>Наши услуги</h2>
+        <h2>Наши услуги</h2>
   <div class="card-container">
     <a href=""><div class="card">
       <h3>Мужская стрижка</h3>
@@ -88,5 +104,7 @@
     </div>
   </div>
 </footer>
+    <script src="Script.js">
+    </script>
 </body>
 </html>
