@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BroBarbers</title>
     <link rel="stylesheet" href="Style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div>
@@ -23,7 +24,9 @@
 
             <div class="nav-list-item">
                 <h1 class="nav-content logo" >BroBarbers</h1>
-                <button class="nav-button" aria-expanded="false" aria-controls="list">Menu</button>
+                <button class="nav-button" aria-expanded="false" aria-controls="list">
+                      MENU
+                </button>
                 <div class="nav-list-menu-item">
                     <a class="nav-menu-item-text" href="">Main</a>
                     <a class="nav-menu-item-text" href="">Shop</a>
@@ -34,49 +37,59 @@
         </nav>
     </div>
     <div class="head">
-        <h1>BRO BARBERS</h1>
-        <h2>Настояший стиль начинаеться здесь</h2>
+        <h1 data-aos="zoom-in">BRO BARBERS</h1>
+        <h2 data-aos="zoom-in">Настояший стиль начинаеться здесь</h2>
     </div>
+    <section class="about" >
+    <div class="container">
+        <h2 data-aos="fade-up">О нас</h2>
+        <p data-aos="fade-up">
+             Мы — команда BRO BARBERS. Мы не просто стрижём — мы создаём стиль.
+            Каждый наш мастер — профессионал с душой, а каждая стрижка — произведение искусства.
+             Уважение к клиенту, атмосферность и мощный стиль — вот что ты найдёшь у нас.
+        </p>
+  </div>
+    </section>
     <section class="services">
         <h2>Наши услуги</h2>
   <div class="card-container">
-    <a href=""><div class="card">
+    <a href="BuyForm.html"><div class="card" data-aos="fade-up">
       <h3>Мужская стрижка</h3>
       <p>Классическая или современная — по твоему вкусу.</p>
       <span>₴300</span>
     </div></a>
-    <a href=""><div class="card">
+    <a href="BuyForm.html"><div class="card" data-aos="fade-up">
       <h3>Бритьё опасной бритвой</h3>
       <p>Традиционное бритьё + уход за кожей.</p>
       <span>₴250</span>
     </div></a>
-    <a href=""><div class="card">
+    <a href="BuyForm.html"><div class="card" data-aos="fade-up">
       <h3>Оформление бороды</h3>
       <p>Четкие линии и индивидуальный стиль.</p>
       <span>₴200</span>
     </div></a>
-      <a href=""><div class="card">
+      <a href="BuyForm.html"><div class="card" data-aos="fade-up">
       <h3>Текстурная стрижка</h3>
       <p>Современная стрижка с большим количеством работы ножем</p>
       <span>₴350</span>
     </div></a>
       <div class="card-container">
-  <a href=""><div class="card">
+  <a href="BuyForm.html"><div class="card" data-aos="fade-up">
     <h3>Детская стрижка</h3>
     <p>Уютно, безопасно и модно для самых юных клиентов.</p>
     <span>₴200</span>
   </div></a>
-  <a href=""><div class="card">
+  <a href="BuyForm.html"><div class="card"data-aos="fade-up">
     <h3>Камуфляж седины</h3>
     <p>Мягкое тонирование без эффекта краски.</p>
     <span>₴300</span>
   </div></a>
-  <a href=""><div class="card">
+  <a href="BuyForm.html"><div class="card" data-aos="fade-up">
     <h3>Укладка</h3>
     <p>Идеальный финиш к твоему образу. Стильно и стойко.</p>
     <span>₴150</span>
   </div></a>
-  <a href=""><div class="card">
+  <a href="BuyForm.html"><div class="card" data-aos="fade-up">
     <h3>Комплекс "Король"</h3>
     <p>Стрижка + бритьё + уход — максимум внимания.</p>
     <span>₴600</span>
@@ -84,16 +97,7 @@
   </div>
   </div>
 </section>
-<section class="about">
-  <div class="container">
-    <h2>О нас</h2>
-    <p>
-      Мы — команда BRO BARBERS. Мы не просто стрижём — мы создаём стиль.
-      Каждый наш мастер — профессионал с душой, а каждая стрижка — произведение искусства.
-      Уважение к клиенту, атмосферность и мощный стиль — вот что ты найдёшь у нас.
-    </p>
-  </div>
-</section>
+
 <footer class="footer">
   <div class="footer-content">
     <p>&copy; 2025 BRO BARBERS. Все права защищены.</p>
@@ -104,6 +108,10 @@
     </div>
   </div>
 </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="Script.js">
     </script>
 </body>

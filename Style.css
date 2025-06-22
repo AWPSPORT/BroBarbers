@@ -138,6 +138,7 @@ font-size: 18px;
 
 .footer-links a:hover {
   color: #fff;
+    transform: translateY(-5px);
 }
 .nav-list-item {
   display: none;
@@ -148,26 +149,40 @@ font-size: 18px;
     line-height: 0;
 
 }
-.nav-button {
-    margin-left: 10%;
-    width: 100px;
-    height: 100px;
-    background-color: #333;
-    border-radius: 15px;
-    font-size: 30px;
-}
 .nav-menu-item-text {
     font-family: 'Montserrat', sans-serif;
     color: #f1f1f1;
-    font-size: 18px;
+    font-size: 40px;
     display: grid;
-
+    text-align: center;
 }
 .nav-button.active ~ .nav-list-menu-item {
     line-height: 1.2;
     background-color: black;
-    padding: 3px;
+    padding: 30px;
     border-radius: 15px;
+
+    margin: 0;
+}
+.nav-button {
+    font-size: 20px;
+    margin-left: 20px;
+  background: none;
+  cursor: pointer;
+  padding: 17px;
+    border: #f1f1f1 5px solid;
+    border-radius: 20px;
+  z-index: 1001;
+}
+
+.nav-button img {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease;
+}
+
+.nav-button.active img {
+  transform: rotate(90deg);
 }
 .nav-list-item {
 

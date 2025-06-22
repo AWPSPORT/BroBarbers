@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+}
+        body{
+    background-color: #111111;
+    font-family: 'Montserrat', sans-serif;
+}
+        .order-section {
+            margin-top: 150px;
+  padding: 40px;
+  max-width: 500px;
+            margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  color: #111;
+}
+a {
+    text-decoration: none;
+}
+.order-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.order-form button {
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+nav{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 5px;
+    color: #f1f1f1;
+}
+.nav-content{
+
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    padding: 10px 20px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+.nav-content:hover {
+    color:#C19A6B;
+}
+a {
+    text-decoration: none;
+}
+.nav-list-item {
+  display: none;
+}
+.nav-list-menu-item {
+    transition: line-height 1.2s;
+    overflow: hidden;
+    line-height: 0;
+
+}
+.nav-menu-item-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f1f1;
+    font-size: 40px;
+    display: grid;
+    text-align: center;
+}
+.nav-button.active ~ .nav-list-menu-item {
+    line-height: 1.2;
+    background-color: black;
+    padding: 30px;
+    border-radius: 15px;
+
+    margin: 0;
+}
+.nav-button {
+    font-size: 20px;
+    margin-left: 20px;
+  background: none;
+  cursor: pointer;
+  padding: 17px;
+    border: #f1f1f1 5px solid;
+    border-radius: 20px;
+  z-index: 1001;
+}
+
+.nav-button img {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease;
+}
+
+/* Поворот при активации */
+.nav-button.active img {
+  transform: rotate(90deg);
+}
+.main {
+    margin-left: 65%;
+}
+
+.order-form button:hover {
+  background-color: #2563eb;
+}
+@media (max-width: 600px){
+    .nav-list-item {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="nav nav-list">
+            <div class="nav-list">
+                <h1 class="nav-content">BroBarbers</h1>
+                <a class="nav-content main" href="index.html">Main</a>
+                <a class="nav-content" href="">Shop</a>
+                <a class="nav-content" href="">Contacts</a>
+                <a class="nav-content" href="">About us</a>
+            </div>
+        </nav>
+        <nav class="nav">
+
+            <div class="nav-list-item">
+                <h1 class="nav-content logo" >BroBarbers</h1>
+                <button class="nav-button" aria-expanded="false" aria-controls="list">
+                      MENU
+                </button>
+                <div class="nav-list-menu-item">
+                    <a class="nav-menu-item-text" href="index.html">Main</a>
+                    <a class="nav-menu-item-text" href="">Shop</a>
+                    <a class="nav-menu-item-text" href="">Contacts</a>
+                    <a class="nav-menu-item-text" href="">About us</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+<section class="order-section">
+  <h2>Оформление заказа</h2>
+  <form action="https://formspree.io/f/ВАШ_ID" method="POST" class="order-form">
+    <label>
+      Имя:
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      Телефон:
+      <input type="tel" name="phone" required>
+    </label>
+
+    <label>
+      Услуга:
+      <select name="service" required>
+        <option value="">Выберите услугу</option>
+        <option value="Мужская стрижка">Мужская стрижка</option>
+        <option value="Бритьё">Бритьё</option>
+        <option value="Оформление бороды">Оформление бороды</option>
+      </select>
+    </label>
+
+    <label>
+      Комментарий:
+      <textarea name="message" placeholder="Комментарий к заказу..."></textarea>
+    </label>
+
+    <button type="submit">Отправить заявку</button>
+  </form>
+</section>
+
+<script>
+    const button = document.querySelector('.nav-button')
+
+button.addEventListener('click', () => {
+  button.classList.toggle('active')
+  button.setAttribute('aria-expended', button.classList.contains('active') ? 'true': 'false')
+});
+</script>
+</body>
+</html>
