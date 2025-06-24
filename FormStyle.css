@@ -1,0 +1,195 @@
+
+body{
+    background-color: #111111;
+    font-family: 'Montserrat', sans-serif;
+}
+.order-section {
+  padding: 40px;
+  height: 350px;
+  max-width: 700px;
+  margin: 150px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  color: #111;
+}
+a {
+    text-decoration: none;
+}
+.order-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.nav-list-item {
+  display: none;
+}
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.order-form button {
+    margin-top: 15px;
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+nav{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 5px;
+    color: #f1f1f1;
+}
+.nav-content{
+
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    padding: 10px 20px;
+    transition: 0.3s;
+    font-size: 20px;
+    color: #f1f1f1;
+}
+.nav-content:hover {
+    color:#C19A6B;
+}
+a {
+    text-decoration: none;
+}
+
+.nav-list-menu-item {
+    transition: line-height 1.2s;
+    overflow: hidden;
+    line-height: 0;
+}
+.nav-menu-item-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f1f1;
+    font-size: 40px;
+    display: grid;
+    text-align: center;
+}
+.nav-button.active ~ .nav-list-menu-item {
+    line-height: 1.2;
+    background-color: black;
+    padding: 30px;
+    border-radius: 15px;
+
+    margin: 0;
+}
+.nav-button {
+    font-size: 20px;
+    margin-left: 20px;
+  background: none;
+  cursor: pointer;
+  padding: 17px;
+    border: #f1f1f1 5px solid;
+    border-radius: 20px;
+  z-index: 1001;
+    color: #f1f1f1;
+}
+
+.nav-button img {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s ease;
+}
+
+/* Поворот при активации */
+.nav-button.active img {
+  transform: rotate(90deg);
+}
+.main {
+    margin-left: 65%;
+}
+
+.order-form button:hover {
+  background-color: #2563eb;
+}
+.footer {
+  background-color: #000;
+  padding: 40px 20px;
+  color: #888;
+  text-align: center;
+    margin-top: 300px;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 15px;
+}
+
+.footer-links a {
+  color: #C19A6B;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+    transform: translateY(-5px);
+}
+@media (max-width: 1700px) {
+    .main {
+        margin-left: 50%;
+    }
+}
+@media (max-width: 1250px){
+    .main {
+        margin-left: 35%;
+    }
+}
+@media (max-width: 950px){
+    .main {
+        margin-left: 25%;
+    }
+}
+@media (max-width: 820px){
+    .main {
+        margin-left: 10%;
+    }
+}
+@media (max-width: 600px){
+    .nav-list-item {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+    }
+}
+@media (max-width: 468px) {
+    .nav-content {
+        padding: 5px 10px;
+    }
+}
+@media (max-width: 470px) {
+    .nav-content {
+        font-size: 30px;
+    }
+}
+@media (max-width: 350px) {
+    .nav-button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}

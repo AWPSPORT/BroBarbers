@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+</head>
+<style>
+    body{
+        background-color: #111111;
+        color: #f1f1f1;
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1{
+        margin-top: 150px;
+        text-align: center;
+    }
+    .nav-list-item {
+  display: none;
+}
+.nav-list-menu-item {
+    transition: line-height 1.2s;
+    overflow: hidden;
+    line-height: 0;
+
+}
+.nav-menu-item-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f1f1;
+    font-size: 40px;
+    display: grid;
+    text-align: center;
+}
+.nav-button.active ~ .nav-list-menu-item {
+    line-height: 1.2;
+    background-color: black;
+    padding: 30px;
+    border-radius: 15px;
+
+    margin: 0;
+}
+.nav-button {
+    font-size: 20px;
+    margin-left: 20px;
+  background: none;
+  cursor: pointer;
+  padding: 17px;
+    border: #f1f1f1 5px solid;
+    border-radius: 20px;
+  z-index: 1001;
+}
+
+
+.main {
+    margin-left: 65%;
+}
+nav{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 5px;
+}
+.nav-content{
+
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    padding: 10px 20px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+.nav-content:hover {
+    color:#C19A6B;
+}
+a {
+    text-decoration: none;
+}
+</style>
+<body>
+    <div>
+        <nav class="nav nav-list">
+            <div class="nav-list">
+                <h1 class="nav-content">BroBarbers</h1>
+                <a class="nav-content main" href="index.html">Main</a>
+                <a class="nav-content" href="Shop.html">Shop</a>
+                <a class="nav-content" href="Contacts.html">Contacts</a>
+                <a class="nav-content" href="About%20us.html">About us</a>
+            </div>
+        </nav>
+        <nav class="nav nav-list-item">
+            <div class="nav-list-item">
+                <h1 class="nav-content logo" >BroBarbers</h1>
+                <button class="nav-button" aria-expanded="false" aria-controls="list">
+                      MENU
+                </button>
+                <div class="nav-list-menu-item">
+                    <a class="nav-menu-item-text" href="index.html">Main</a>
+                    <a class="nav-menu-item-text" href="Shop.html">Shop</a>
+                    <a class="nav-menu-item-text" href="Contacts.html">Contacts</a>
+                    <a class="nav-menu-item-text" href="About%20us.html">About us</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h1>ЭТО ТЕСТОВАЯ СРАНИЦА</h1>
+<script>
+    const button = document.querySelector('.nav-button')
+
+button.addEventListener('click', () => {
+  button.classList.toggle('active')
+  button.setAttribute('aria-expended', button.classList.contains('active') ? 'true': 'false')
+});
+</script>
+</body>
+</html>

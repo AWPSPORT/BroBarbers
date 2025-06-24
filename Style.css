@@ -175,24 +175,11 @@ font-size: 18px;
   z-index: 1001;
 }
 
-.nav-button img {
-  width: 150px;
-  height: 150px;
-  transition: transform 0.3s ease;
-}
 
-.nav-button.active img {
-  transform: rotate(90deg);
-}
-.nav-list-item {
-
-}
 .main {
     margin-left: 65%;
 }
-.logo{
-    font-size: 50px;
-}
+
 @media (max-width: 1700px) {
     .main {
         margin-left: 50%;
@@ -226,9 +213,14 @@ font-size: 18px;
         padding: 5px 10px;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 470px) {
     .nav-content {
+        font-size: 30px;
+    }
+}
+@media (max-width: 350px) {
+    .nav-button {
         font-size: 15px;
-        padding: 4px 8px;
+        padding: 10px;
     }
 }
